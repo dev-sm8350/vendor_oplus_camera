@@ -7,3 +7,4 @@ allow hal_camera_default proc:file rw_file_perms;
 allow hal_camera_default vendor_data_file:dir rw_file_perms;
 allow hal_camera_default hal_system_suspend_service:service_manager find;
 allow hal_camera_default public_adsprpcd_file:file r_file_perms;
+allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
