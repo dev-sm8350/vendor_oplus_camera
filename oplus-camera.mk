@@ -35,7 +35,7 @@ PRODUCT_BOOT_JARS += \
     oplus-support-wrapper
 
 # Frameworks
-TARGET_USES_OPLUS_CAMERA := true
+TARGET_CAMERA_PACKAGE_NAME := com.oplus.packageName
 
 # Overlay
 PRODUCT_PACKAGES += \

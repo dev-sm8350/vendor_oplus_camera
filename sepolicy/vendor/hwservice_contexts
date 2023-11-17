@@ -1,0 +1,11 @@
+# Cameraextension service
+vendor.oplus.hardware.cameraextension.ICameraExtensionService/default         u:object_r:oem_service:s0
+
+# Cammidas service
+vendor.oplus.hardware.cammidasservice.IMIDASService/default                   u:object_r:oem_service:s0
+
+# CommonDcs service
+vendor.oplus.hardware.commondcs.ICommonDcsAidlHalService/default              u:object_r:oem_service:s0
+
+# OsenseAidl
+vendor.oplus.hardware.osense.client.IOsenseAidlHalReporter/default            u:object_r:oem_service:s0
