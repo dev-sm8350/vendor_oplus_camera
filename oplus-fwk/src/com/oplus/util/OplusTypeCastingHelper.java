@@ -1,6 +1,4 @@
 package com.oplus.util;
 
-public class OplusTypeCastingHelper {
-    
-    public OplusTypeCastingHelper() {}
+public final class OplusTypeCastingHelper {
 }

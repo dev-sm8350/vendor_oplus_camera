@@ -1,20 +1,18 @@
 package com.oplus.content;
 
-public class OplusFeatureConfigManager {
+import android.os.RemoteException;
 
-    public static OplusFeatureConfigManager sOplusFeatureConfigManager = null;
+public class OplusFeatureConfigManager {
+    private static OplusFeatureConfigManager sInstance = null;
 
     public static OplusFeatureConfigManager getInstance() {
-        if (sOplusFeatureConfigManager == null) {
-            sOplusFeatureConfigManager = new OplusFeatureConfigManager();
+        if (sInstance == null) {
+            sInstance = new OplusFeatureConfigManager();
         }
-        return sOplusFeatureConfigManager;
+        return sInstance;
     }
 
-    public boolean hasFeature(String name) {
-        if ("oplus.software.vibrator_lmvibrator".equals(name)) {
-            return true;
-        }
+    public boolean hasFeature(String name) throws RemoteException {
         return false;
     }
 }

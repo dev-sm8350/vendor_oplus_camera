@@ -3,16 +3,21 @@ package com.oplus.app;
 import android.os.UserHandle;
 
 public class OPlusAccessControlManager {
-    
-    private static OPlusAccessControlManager sOPlusAccessControlManager = null;
-
+    private static volatile OPlusAccessControlManager sInstance = null;
     public static final int USER_CURRENT = UserHandle.myUserId();
 
+    private OPlusAccessControlManager() {
+    }
+
     public static OPlusAccessControlManager getInstance() {
-        if (sOPlusAccessControlManager == null) {
-            sOPlusAccessControlManager = new OPlusAccessControlManager();
+        if (sInstance == null) {
+            synchronized (OPlusAccessControlManager.class) {
+                if (sInstance == null) {
+                    sInstance = new OPlusAccessControlManager();
+                }
+            }
         }
-        return sOPlusAccessControlManager;
+        return sInstance;
     }
 
     public boolean isEncryptPass(String packageName, int userId) {
