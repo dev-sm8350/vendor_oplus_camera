@@ -60,12 +60,5 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.oplus.system.gallery.name=com.google.android.apps.photos
 
 
-# Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += \
-    vendor/oplus/camera/sepolicy/vendor
-
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    vendor/oplus/camera/sepolicy/private
-
 # Oplus Camera
 $(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
