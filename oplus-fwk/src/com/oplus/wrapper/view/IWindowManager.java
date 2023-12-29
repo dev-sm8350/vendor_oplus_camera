@@ -338,6 +338,10 @@ public interface IWindowManager {
             public void requestAppKeyboardShortcuts(IResultReceiver iResultReceiver, int i) throws RemoteException {
             }
 
+            public void requestImeKeyboardShortcuts(IResultReceiver iRsultReceiver, int i) throws RemoteException {
+
+            }
+
             public void getStableInsets(int i, Rect rect) throws RemoteException {
             }
 
@@ -645,3 +649,4 @@ public interface IWindowManager {
         }
     }
 }
+
