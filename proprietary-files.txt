@@ -46,6 +46,7 @@ odm/etc/camera/singleblur/license_release.lic
 odm/etc/camera/singleblur/license_release.license
 odm/lib/libAlgoInterface.so
 odm/lib/libVDBlurlessAPI_v2.so
+odm/lib/libapsultrahdr.so
 odm/lib/rfsa/adsp/libQnnHtpSkel.so
 odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
@@ -91,6 +92,7 @@ odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
 odm/lib64/libancbase_rt_bokeh.so
 odm/lib64/libancbase_segbase.so
+odm/lib64/libapsultrahdr.so
 odm/lib64/libarcsoft_long_exposure_capture.so
 odm/lib64/libarcsoft_long_exposure_preview.so
 odm/lib64/libcalculator.so

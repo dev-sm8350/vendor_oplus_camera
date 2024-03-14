@@ -54,6 +54,23 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        system_ext/priv-app/OplusCamera/OplusCamera.apk)
+            split --bytes=20M -d "${2}" "${2}".part
+            tmp_dir="${EXTRACT_TMP_DIR}/OplusCamera"
+            $APKTOOL d -q "$2" -o "$tmp_dir" -f
+            grep -rl "com.oneplus.gallery" "$tmp_dir" | xargs sed -i 's|"com.oneplus.gallery"|"com.google.android.apps.photos"|g'
+            $APKTOOL b -q "$tmp_dir" -o "$2"
+            rm -rf "$tmp_dir"
+            split --bytes=20M -d "$2" "$2".part
+            ;;
+        odm/lib64/libSuperRaw.so)
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper.
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

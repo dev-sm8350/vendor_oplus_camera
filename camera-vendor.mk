@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license \
     vendor/oplus/camera/proprietary/odm/lib/libAlgoInterface.so:$(TARGET_COPY_OUT_ODM)/lib/libAlgoInterface.so \
     vendor/oplus/camera/proprietary/odm/lib/libVDBlurlessAPI_v2.so:$(TARGET_COPY_OUT_ODM)/lib/libVDBlurlessAPI_v2.so \
+    vendor/oplus/camera/proprietary/odm/lib/libapsultrahdr.so:$(TARGET_COPY_OUT_ODM)/lib/libapsultrahdr.so \
     vendor/oplus/camera/proprietary/odm/lib/rfsa/adsp/libQnnHtpSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libQnnHtpSkel.so \
     vendor/oplus/camera/proprietary/odm/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarc_gk_pt_hvx_skel.so \
     vendor/oplus/camera/proprietary/odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
@@ -92,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/oplus/camera/proprietary/odm/lib64/libalCFR.so:$(TARGET_COPY_OUT_ODM)/lib64/libalCFR.so \
     vendor/oplus/camera/proprietary/odm/lib64/libancbase_rt_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libancbase_rt_bokeh.so \
     vendor/oplus/camera/proprietary/odm/lib64/libancbase_segbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libancbase_segbase.so \
+    vendor/oplus/camera/proprietary/odm/lib64/libapsultrahdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsultrahdr.so \
     vendor/oplus/camera/proprietary/odm/lib64/libarcsoft_long_exposure_capture.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_long_exposure_capture.so \
     vendor/oplus/camera/proprietary/odm/lib64/libarcsoft_long_exposure_preview.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_long_exposure_preview.so \
     vendor/oplus/camera/proprietary/odm/lib64/libcalculator.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalculator.so \
