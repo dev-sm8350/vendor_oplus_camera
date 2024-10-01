@@ -3,7 +3,7 @@ package android.os;
 public class OplusSystemProperties {
 
     public static String get(String key) {
-        return SystemProperties.get(key, "");
+        return SystemProperties.get(key);
     }
 
     public static String get(String key, String def) {

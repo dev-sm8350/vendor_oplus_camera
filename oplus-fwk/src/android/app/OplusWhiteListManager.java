@@ -8,8 +8,8 @@ public class OplusWhiteListManager {
 
     public OplusWhiteListManager(Context context) {}
 
-    public ArrayList<String> getStageProtectListFromPkg(String pkg, int type) {
-        return new ArrayList<String>();
+    public ArrayList<String> getStageProtectListFromPkg(String calledPkg, int type) {
+        return new ArrayList<>();
     }
 
     public void addStageProtectInfo(String pkg, long timeout) {}

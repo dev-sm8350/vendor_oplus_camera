@@ -4,8 +4,8 @@ import com.oplus.zoomwindow.OplusZoomWindowInfo;
 
 interface IOplusZoomWindowObserver {
 
-    void onInputMethodChanged(boolean z);
-    void onZoomWindowDied(String str);
-    void onZoomWindowHide(inout OplusZoomWindowInfo oplusZoomWindowInfo);
-    void onZoomWindowShow(inout OplusZoomWindowInfo oplusZoomWindowInfo);
+    void onInputMethodChanged(boolean isShown);
+    void onZoomWindowDied(String appName);
+    void onZoomWindowHide(inout OplusZoomWindowInfo info);
+    void onZoomWindowShow(inout OplusZoomWindowInfo info);
 }

@@ -2,7 +2,7 @@ package android.bluetooth;
 
 public class OplusBluetoothAdapter {
 
-    private static OplusBluetoothAdapter sAdapter;
+    private static OplusBluetoothAdapter sAdapter = null;
     
     public static OplusBluetoothAdapter getOplusBluetoothAdapter() {
         if (sAdapter == null) {
