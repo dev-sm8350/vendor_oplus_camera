@@ -65,7 +65,7 @@ function blob_fixup() {
             rm -rf "$tmp_dir"
             split --bytes=20M -d "$2" "$2".part
             ;;
-        odm/lib64/libSuperRaw.so | odm/lib64/libYTCommon.so | odm/lib64/liblvimfs_wrapper.so)
+        odm/lib/libYTCommon.so | odm/lib64/libSuperRaw.so | odm/lib64/libYTCommon.so | odm/lib64/liblvimfs_wrapper.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
     esac

@@ -41,6 +41,7 @@ odm/etc/camera/singleblur/license_release.lic
 odm/etc/camera/singleblur/license_release.license
 odm/lib/libAlgoInterface.so
 odm/lib/libAlgoProcess.so
+odm/lib/libSuperTextWrapper.so
 odm/lib/libVDBlurlessAPI_v2.so;DISABLE_CHECKELF
 odm/lib/libapsexif.so
 odm/lib/libapsjpeg.so
@@ -72,8 +73,9 @@ odm/lib64/libSuperRaw.so
 odm/lib64/libSuperTextWrapper.so
 odm/lib64/libTrafficMode.so
 odm/lib64/libXDocProcessSDK.so
-odm/lib64/libXDocProcessSDK.so
+odm/lib/libXDocProcessSDK.so
 odm/lib64/libYTCommon.so
+odm/lib/libYTCommon.so
 odm/lib64/libaiboost.so
 odm/lib64/libaiboost_QnnHtpAltPrepStub.so;FIX_SONAME
 odm/lib64/libaiboost_QnnHtpStub.so;FIX_SONAME
@@ -97,6 +99,7 @@ odm/lib64/liblvimfs.so
 odm/lib64/liblvimfs_wrapper.so
 odm/lib64/libnightvision.so;FIX_SONAME
 odm/lib64/libnpu.so
+odm/lib64/liboplus-uah-client.so
 odm/lib64/liboplusvppfilter.so
 odm/lib64/libstdc++.so;MODULE_SUFFIX=_odm
 odm/lib64/libsymphony-cpu.so

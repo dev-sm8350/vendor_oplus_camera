@@ -9,15 +9,28 @@ PRODUCT_COPY_FILES += \
     vendor/oplus/camera/proprietary/odm/etc/camera/license_release_fdc.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/license_release_fdc.lic \
     vendor/oplus/camera/proprietary/odm/etc/camera/model/license.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/model/license.lic \
     vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.lic \
-    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license
+    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license \
+    vendor/oplus/camera/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 
 PRODUCT_PACKAGES += \
     libcamxexternalformatutils \
+    android.hardware.camera.provider@2.4-external \
+    android.hardware.camera.provider@2.4-legacy \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-external-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-external-impl \
+    camera.device@3.5-impl \
+    camera.device@3.6-external-impl \
+    android.hardware.camera.provider@2.4-impl \
     libcamera2ndk_vendor \
     libhdrdynamic \
     libhdrdynamicootf \
     libipebpsstripingpck \
     libsensorndkbridge \
+    vendor.qti.hardware.camera.device@1.0_vendor \
     libHeifEncoderWrapper \
     libNativeWinBuffExchange \
     liboplusheifwriter \
@@ -54,6 +67,9 @@ PRODUCT_PACKAGES += \
     libst_mobile \
     libst_sticker_jni \
     vendor.oplus.hardware.cameraMDM@1.0 \
+    libSuperTextWrapper \
+    libXDocProcessSDK \
+    libYTCommon \
     libAlgoInterface \
     libAlgoProcess \
     libVDBlurlessAPI_v2 \
@@ -84,10 +100,7 @@ PRODUCT_PACKAGES += \
     libRbsFlow_cap \
     libRedeyeReduce \
     libSuperRaw \
-    libSuperTextWrapper \
     libTrafficMode \
-    libXDocProcessSDK \
-    libYTCommon \
     libaiboost \
     libaiboost_QnnHtpAltPrepStub \
     libaiboost_QnnHtpStub \
@@ -111,6 +124,7 @@ PRODUCT_PACKAGES += \
     liblvimfs_wrapper \
     libnightvision \
     libnpu \
+    liboplus-uah-client \
     liboplusvppfilter \
     libstdc++_odm \
     libsymphony-cpu \
@@ -121,4 +135,5 @@ PRODUCT_PACKAGES += \
     OplusCamera \
     oplus-support-wrapper \
     com.oplus.camera.unit.sdk.adapter \
-    com.oplus.camera.unit.sdk
+    com.oplus.camera.unit.sdk \
+    android.hardware.camera.provider@2.4-service_64
