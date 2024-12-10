@@ -1836,6 +1836,24 @@ cc_prebuilt_library_shared {
 	device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.urcc-V1-ndk_platform",
+	owner: "oplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so"],
+			shared_libs: ["libbinder_ndk", "libjsoncpp", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
 android_app_import {
 	name: "OplusAppPlatform",
 	owner: "oplus",

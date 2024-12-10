@@ -121,3 +121,6 @@ vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libipebpsstripingpck.so;FIX_SONAME
 vendor/lib64/libsensorndkbridge.so
+
+# From op5da6l1
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so;DISABLE_CHECKELF|3f27c1bdd1252d964961a324b010fe3eae057771

@@ -117,6 +117,7 @@ PRODUCT_PACKAGES += \
     libsymphony-cpu \
     libsymphonypower \
     vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
+    vendor.oplus.hardware.urcc-V1-ndk_platform \
     OplusAppPlatform \
     OplusCamera \
     oplus-support-wrapper \
