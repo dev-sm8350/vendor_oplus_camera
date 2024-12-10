@@ -9,28 +9,15 @@ PRODUCT_COPY_FILES += \
     vendor/oplus/camera/proprietary/odm/etc/camera/license_release_fdc.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/license_release_fdc.lic \
     vendor/oplus/camera/proprietary/odm/etc/camera/model/license.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/model/license.lic \
     vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.lic \
-    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license \
-    vendor/oplus/camera/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc
+    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license
 
 PRODUCT_PACKAGES += \
     libcamxexternalformatutils \
-    android.hardware.camera.provider@2.4-external \
-    android.hardware.camera.provider@2.4-legacy \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-external-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-external-impl \
-    camera.device@3.5-impl \
-    camera.device@3.6-external-impl \
-    android.hardware.camera.provider@2.4-impl \
     libcamera2ndk_vendor \
     libhdrdynamic \
     libhdrdynamicootf \
     libipebpsstripingpck \
     libsensorndkbridge \
-    vendor.qti.hardware.camera.device@1.0_vendor \
     libHeifEncoderWrapper \
     libNativeWinBuffExchange \
     liboplusheifwriter \
@@ -129,11 +116,9 @@ PRODUCT_PACKAGES += \
     libstdc++_odm \
     libsymphony-cpu \
     libsymphonypower \
-    libui_odm \
     vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
     OplusAppPlatform \
     OplusCamera \
     oplus-support-wrapper \
     com.oplus.camera.unit.sdk.adapter \
-    com.oplus.camera.unit.sdk \
-    android.hardware.camera.provider@2.4-service_64
+    com.oplus.camera.unit.sdk

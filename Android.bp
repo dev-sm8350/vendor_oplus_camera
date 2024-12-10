@@ -34,194 +34,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.camera.provider@2.4-external",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so"],
-			shared_libs: ["android.hardware.camera.common@1.0", "android.hardware.camera.device@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.device@3.6", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "camera.device@3.3-impl", "camera.device@3.4-external-impl", "camera.device@3.4-impl", "camera.device@3.5-external-impl", "camera.device@3.5-impl", "camera.device@3.6-external-impl", "libcamera_metadata", "libcutils", "libhardware", "libhidlbase", "liblog", "libtinyxml2", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.camera.provider@2.4-legacy",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so"],
-			shared_libs: ["android.hardware.camera.common@1.0", "android.hardware.camera.device@1.0", "vendor.qti.hardware.camera.device@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "camera.device@1.0-impl", "camera.device@3.2-impl", "camera.device@3.3-impl", "camera.device@3.4-impl", "camera.device@3.5-impl", "libcamera_metadata", "libcutils", "libhardware", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@1.0-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@1.0-impl.so"],
-			shared_libs: ["libhidlbase", "libhidlmemory", "libutils", "android.hardware.camera.device@1.0", "vendor.qti.hardware.camera.device@1.0", "android.hardware.camera.common@1.0", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common@1.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "libcutils", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.2-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.2-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "android.hardware.camera.device@3.2", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.3-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.3-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.4-external-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.4-external-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "camera.device@3.3-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libsync", "libyuv", "libjpeg", "libexif", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.4-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.4-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "camera.device@3.3-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.5-external-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.5-external-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "camera.device@3.3-impl", "camera.device@3.4-external-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libsync", "libyuv", "libjpeg", "libexif", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.5-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.5-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "camera.device@3.3-impl", "camera.device@3.4-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.6-external-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.6-external-impl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl", "camera.device@3.3-impl", "camera.device@3.4-external-impl", "camera.device@3.5-external-impl", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.device@3.6", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libsync", "libyuv", "libjpeg", "libexif", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.camera.provider@2.4-impl",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so"],
-			shared_libs: ["android.hardware.camera.common@1.0", "android.hardware.camera.device@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.provider@2.4", "android.hardware.camera.provider@2.4-external", "android.hardware.camera.provider@2.4-legacy", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "camera.device@1.0-impl", "camera.device@3.2-impl", "camera.device@3.3-impl", "camera.device@3.4-external-impl", "camera.device@3.4-impl", "camera.device@3.5-external-impl", "camera.device@3.5-impl", "libcamera_metadata", "libcutils", "libhardware", "libhidlbase", "liblog", "libtinyxml2", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcamera2ndk_vendor",
 	owner: "oplus",
 	strip: {
@@ -299,23 +111,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsensorndkbridge.so"],
 			shared_libs: ["libbase", "libhidlbase", "libutils", "android.frameworks.sensorservice@1.0", "android.hardware.sensors@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.camera.device@1.0_vendor",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so"],
-			shared_libs: ["android.hardware.camera.device@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -2024,24 +1819,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libui_odm",
-	stem: "libui",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libui.so"],
-			shared_libs: ["android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.common-V1-ndk_platform", "android.hardware.graphics.common@1.2", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libbase", "libcutils", "libgralloctypes", "libhidlbase", "libsync", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.osense.client-V1-ndk_platform_odm",
 	stem: "vendor.oplus.hardware.osense.client-V1-ndk_platform",
 	owner: "oplus",
@@ -2102,23 +1879,5 @@ dex_import {
 	owner: "oplus",
 	jars: ["proprietary/system_ext/framework/com.oplus.camera.unit.sdk.jar"],
 	system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.camera.provider@2.4-service_64",
-	owner: "oplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64"],
-			shared_libs: ["android.hardware.camera.common@1.0", "android.hardware.camera.device@1.0", "vendor.qti.hardware.camera.device@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.device@3.4", "android.hardware.camera.device@3.5", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "libbinder", "libcamera_metadata", "libhardware", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
 }
 
