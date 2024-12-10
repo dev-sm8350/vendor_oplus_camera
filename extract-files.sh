@@ -56,8 +56,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/priv-app/OplusCamera/OplusCamera.apk)
-            split --bytes=20M -d "${2}" "${2}".part
+       my_product/app/OplusCamera/OplusCamera.apk)
             tmp_dir="${EXTRACT_TMP_DIR}/OplusCamera"
             $APKTOOL d -q "$2" -o "$tmp_dir" -f
             grep -rl "com.oneplus.gallery" "$tmp_dir" | xargs sed -i 's|"com.oneplus.gallery"|"com.google.android.apps.photos"|g'
