@@ -1,12 +1,8 @@
-# Oplus camera specific init script
-
-on post-fs-data
-
-    # Bind mount fastrpc_shell_3 for labelling
-    mkdir /mnt/vendor/dsp 0770 root root
-    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
-    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
-    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+#
+# Copyright (C) 2024 The Nameless-AOSP Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
 on post-fs-data
 
@@ -17,6 +13,8 @@ on post-fs-data
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
 on boot
-
     # OIS
     chown cameraserver cameraserver /sys/kernel/ois_control/dump_registers
+
+on property:vendor.usb.product_string=*
+    setprop ro.vendor.oplus.market.watermark ${vendor.usb.product_string}

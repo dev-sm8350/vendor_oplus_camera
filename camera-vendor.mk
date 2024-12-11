@@ -6,21 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oplus/camera
 
 PRODUCT_COPY_FILES += \
-    vendor/oplus/camera/proprietary/odm/etc/camera/license_release_fdc.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/license_release_fdc.lic \
-    vendor/oplus/camera/proprietary/odm/etc/camera/model/license.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/model/license.lic \
-    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.lic \
-    vendor/oplus/camera/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license
+    vendor/oplus/camera/proprietary/system_ext/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml
 
 PRODUCT_PACKAGES += \
-    libcamxexternalformatutils \
-    libcamera2ndk_vendor \
-    libhdrdynamic \
-    libhdrdynamicootf \
-    libipebpsstripingpck \
-    libsensorndkbridge \
-    libHeifEncoderWrapper \
-    libNativeWinBuffExchange \
-    liboplusheifwriter \
     libAPSClient-cmd-jni \
     libAPSClient-jni \
     libAncFilter_jni \
@@ -35,12 +23,13 @@ PRODUCT_PACKAGES += \
     libCombineLut \
     libCombineLutJni \
     libFileExtender-jni \
-    libHeifWinBufExchg-jni \
+    libHeifEncoderWrapper \
+    libNativeWinBuffExchange \
     libOplusBlurPreviewJNI \
-    libSuperTextWrapper_my_product \
+    libSuperTextWrapper_system_ext \
     libXDocProcessSDK-jni \
-    libXDocProcessSDK_my_product \
-    libYTCommon_my_product \
+    libXDocProcessSDK_system_ext \
+    libYTCommon_system_ext \
     libarcsoft_wideselfie \
     libcolorx-loader \
     libcolorx \
@@ -49,75 +38,13 @@ PRODUCT_PACKAGES += \
     libjni_wideselfie \
     libjnisingleblur_api \
     libjnistblur_api \
-    libmpbase_my_product \
+    libmpbase_system_ext \
+    liboplusheifwriter \
     libsingle_camera_bokeh_native \
     libst_mobile \
     libst_sticker_jni \
-    vendor.oplus.hardware.cameraMDM@1.0 \
-    libSuperTextWrapper \
-    libXDocProcessSDK \
-    libYTCommon \
-    libAlgoInterface \
-    libAlgoProcess \
-    libVDBlurlessAPI_v2 \
-    libapsexif \
-    libapsjpeg \
-    libexif-jpeg-aps \
-    libmpbase \
-    libosenseaidlhalclient \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform \
-    android.hardware.graphics.allocator@2.0_odm \
-    android.hardware.graphics.allocator@3.0_odm \
-    android.hardware.graphics.allocator@4.0_odm \
-    lib2DSlender \
-    libAncFilter \
-    libAncHumBokeh \
-    libAncHumBokehPost \
-    libAncHumVideoBase \
-    libAncHumanDoubleExposure \
-    libAncHumanRetain \
-    libAncHumanSegFigureFusion \
-    libAncSegBaseSdk \
-    libBokehPre \
-    libCaptureBokeh \
-    libFDClite \
-    libFilterWrapper \
-    libPerfectColor \
-    libPlatformValidatorShared \
-    libRbsFlow_cap \
-    libRedeyeReduce \
-    libSuperRaw \
-    libTrafficMode \
-    libaiboost \
-    libaiboost_QnnHtpAltPrepStub \
-    libaiboost_QnnHtpStub \
-    libaiboost_hexagon \
-    libaiboost_qnn_sr \
-    libaiboost_sr \
-    libaiboost_ubwc \
-    libaisd \
-    libaiseg \
-    libalCFR \
-    libancbase_rt_bokeh \
-    libancbase_segbase \
-    libcalculator \
-    libcalculator_domains \
-    libcalculator_htp \
-    libcdm_metrics_protos \
-    libcdm_protos \
-    libcom.oplus.calidatacontainer \
-    libimgClarityEvaluate \
-    liblvimfs \
-    liblvimfs_wrapper \
-    libnightvision \
-    libnpu \
-    liboplus-uah-client \
-    liboplusvppfilter \
-    libstdc++_odm \
-    libsymphony-cpu \
-    libsymphonypower \
-    vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
-    vendor.oplus.hardware.urcc-V1-ndk_platform \
+    libarc.ion \
+    libtrace \
     OplusAppPlatform \
     OplusCamera \
     oplus-support-wrapper \

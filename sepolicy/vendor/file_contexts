@@ -1,7 +1,6 @@
 # Camera
 /(odm|vendor|vendor/odm)/lib64/vendor\.oplus\.hardware\.osense\.client-V1-ndk\.so             u:object_r:same_process_hal_file:s0
 /(odm|vendor|vendor/odm)/lib64/vendor\.oplus\.hardware\.osense\.client-V1-ndk_platform\.so    u:object_r:same_process_hal_file:s0
-/(odm|vendor|vendor/odm)/lib64/vendor\.oplus\.hardware\.urcc-V1-ndk_platform\.so              u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib/rfsa/adsp(/.*)?                                                             u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib64/libarcsoft_(.*)?\.so                                                      u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib64/vendor\.qti\.hardware\.camera\.offlinecamera-V1-ndk\.so                   u:object_r:same_process_hal_file:s0

@@ -1,0 +1,11 @@
+/*
+ * Copyright (C) 2024 The Nameless-AOSP Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+prebuilt_etc {
+    name: "init.oplus.camera.rc",
+    src: "init.oplus.camera.rc",
+    sub_dir: "init",
+    device_specific: true,
+}

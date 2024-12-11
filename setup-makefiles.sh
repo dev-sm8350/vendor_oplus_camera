@@ -1,9 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
-# Copyright (C) 2022 Paranoid Android
-#
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -12,7 +10,7 @@ set -e
 DEVICE=camera
 VENDOR=oplus
 
-# Load extract utilities and do some sanity checks.
+# Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
@@ -28,14 +26,7 @@ source "${HELPER}"
 function vendor_imports() {
     cat <<EOF >>"$1"
         "vendor/oneplus/oneplus9",
-        "hardware/qcom/display",
-        "hardware/qcom/display/gralloc",
-        "hardware/qcom/display/libdebug",
         "vendor/qcom/common/vendor/adreno-r",
-        "vendor/qcom/common/vendor/display/5.4",
-        "vendor/qcom/common/vendor/gps-legacy",
-        "vendor/qcom/common/vendor/media-5.4",
-        "vendor/qcom/common/vendor/wlan-legacy",
 EOF
 }
 
@@ -49,7 +40,7 @@ function lib_to_package_fixup_system_ext_variants() {
             libXDocProcessSDK | \
             libYTCommon | \
             libmpbase)
-            echo "$1_my_product"
+            echo "$1_system_ext"
             ;;
         *)
             return 1
@@ -63,10 +54,10 @@ function lib_to_package_fixup() {
         lib_to_package_fixup_system_ext_variants "$@"
 }
 
-# Initialize the helper.
+# Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
-# Warning headers and guards.
+# Warning headers and guards
 write_headers
 
 write_makefiles "${MY_DIR}/proprietary-files.txt"
