@@ -44,3 +44,9 @@ system_ext/lib64/libHeifEncoderWrapper.so
 system_ext/lib64/libNativeWinBuffExchange.so
 system_ext/lib64/liboplusheifwriter.so
 system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk
+
+# License - OnePlus 9 pro
+odm/etc/camera/license_release_fdc.lic|94279c43be4069558716403e7d0df9a63890d031
+odm/etc/camera/model/license.lic|553876ed19ab9089b78da37a648dc662c8ba1ce3
+odm/etc/camera/singleblur/license_release.lic|713c460772ee8871f6131d78583e5cdcac87a2fb
+odm/etc/camera/singleblur/license_release.license|5b72665aa0e79c569fd92ad462ba1028ce936897
